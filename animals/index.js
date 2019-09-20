@@ -19,7 +19,7 @@ async function renderAnimals() {
     const name = $(ele).attr("title");
     const href = $(ele).attr("href");
     const src = $(ele).children("img").attr("src");
-    animals.push({ name, href, img: `${DOMAIN}${src}` });
+    animals.push({ name, href: `${DOMAIN}${href}`, img: `${DOMAIN}${src}` });
   });
   return { animals };
 }
